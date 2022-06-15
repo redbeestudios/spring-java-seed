@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      enabled: false
+
+database:
+  configuration:
+    url: jdbc:sqlserver://localhost:1433;databaseName=master
+    username: sa
+    password: Password01

@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: ms-seed
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:9999/postgres
+    username: postgres
+    password: password01
+  redis:
+    host: localhost
+    port: 6379
+
+springdoc:
+  swagger-ui:
+    path: /api/ms-seed/
+  paths-to-exclude: /swagger-resources/**
+  api-docs:
+    path: /api/ms-seed/docs

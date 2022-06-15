@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: ms-seed
+spec:
+  hosts:
+  - "the-phe.redbee.cl"
+  gateways:
+  - "the-phe-gateway-cert"
+  http:
+  - match:
+    - uri:
+        prefix: "/api/ms-seed/"
+    route:
+    - destination:
+        host: ms-seed
