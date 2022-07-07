@@ -31,14 +31,11 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.cloud:spring-cloud-starter-sleuth'
 	implementation 'org.springframework.cloud:spring-cloud-starter-config'
-	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
-	implementation 'org.springframework.kafka:spring-kafka'
-	runtimeOnly    'org.postgresql:postgresql'
-	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 
-	//%SELECTED_DEPENDENCIES%
+	%SELECTED_DEPENDENCIES%
+
 
 	// ArchUnit
 	testImplementation "com.tngtech.archunit:archunit:0.23.1"
